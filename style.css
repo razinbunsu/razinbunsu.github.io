@@ -1,0 +1,42 @@
+/* 
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 900 
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+.rubik-300 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.rubik-500 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.rubik-maps-regular {
+    font-family: "Rubik Maps", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.bg-dark-blue {
+    background-color: #0212CA;
+}
+.text-dark-blue {
+    color: #0212CA;
+}
+.heading-1 {
+    font-size: 8rem;
+    font-size: clamp(32px, 7vw, 8rem);
+    line-height: 100%;
+}
+
+.nav-social {
+    font-size: 2rem;
+}
