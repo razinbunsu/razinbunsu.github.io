@@ -33,7 +33,7 @@ body {
 hr {
     border-color: #C4C4C4;
 }
-.w-15 {
+.img-wrap {
     width: 15%;
 }
 .text-small {
@@ -50,4 +50,10 @@ hr {
 .list-dash li {
     padding-left: 1.125rem;
     position: relative;
+}
+
+@media (max-width: 575.98px) { 
+    .img-wrap {
+        width: 50%;
+    }
 }
