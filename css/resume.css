@@ -1,0 +1,53 @@
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.manrope-<uniquifier> {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+.manrope-regular {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.h2 {
+    font-size: 1.625rem;
+}
+.h3 {
+    font-size: 1rem;
+}
+.text-gray {
+    color: #70706F;
+}
+hr {
+    border-color: #C4C4C4;
+}
+.w-15 {
+    width: 15%;
+}
+.text-small {
+    font-size: 0.75rem;
+}
+.text-decoration-none:hover {
+    text-decoration: underline !important;
+}
+.list-dash li:before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+.list-dash li {
+    padding-left: 1.125rem;
+    position: relative;
+}
