@@ -1,0 +1,122 @@
+@page {
+    size: A4 portrait;
+    margin: 10mm;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body {
+    font-size: 9pt;
+    line-height: 1.25;
+    color: #222;
+}
+body > .container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body > .container > .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+body > .container > .row > header {
+    width: 100%;
+    padding: 0 !important;
+}
+header > .d-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding-bottom: 0 !important;
+}
+header .img-wrap {
+    width: 20mm;
+    flex: 0 0 20mm;
+}
+header .img-wrap img {
+    width: 100%;
+}
+header .flex-grow-1 {
+    min-width: 0;
+    margin-left: 5mm !important;
+    padding-top: 0 !important;
+}
+header .text-center {
+    text-align: left !important;
+}
+header h1 {
+    margin: 0 0 3pt;
+    font-size: 22pt;
+    line-height: 1.1;
+}
+header .mt-2 {
+    margin-top: 3pt !important;
+    font-size: 9.5pt;
+}
+header p {
+    margin: 4pt 0 0 !important;
+}
+header hr {
+    margin: 3mm 0 !important;
+    padding: 0 !important;
+}
+/* Preserve two columns below Bootstrap's screen breakpoint.
+   Give experience more room so body text need not be scaled down. */
+body > .container > .row > .col-md-7 {
+    flex: 0 0 67%;
+    width: 67%;
+    padding: 0 5mm 0 0;
+}
+body > .container > .row > .col-md-4 {
+    margin-left: 0 !important;
+    flex-basis: 33%;
+    width: 33%;
+    padding: 0 0 0 2mm;
+}
+h2.h2 {
+    margin: 0 0 6pt !important;
+    font-size: 14pt;
+    line-height: 1.2;
+}
+h3.h3 {
+    margin: 0 0 3pt;
+    font-size: 10.5pt;
+    line-height: 1.25;
+}
+.details {
+    padding-bottom: 8pt !important;
+    break-inside: avoid;
+}
+/* Add separation between companies without loosening each role. */
+body > .container > .row > .col-md-7:first-of-type .details + .details {
+    margin-top: 4pt;
+}
+.details > .mb-2 {
+    margin-bottom: 3pt !important;
+    font-size: 9pt;
+}
+.details p, .details ul {
+    margin: 0;
+}
+.list-dash li {
+    padding-left: 10pt;
+    margin-bottom: 1pt;
+    orphans: 2;
+    widows: 2;
+}
+.text-gray {
+    color: #555;
+}
+a {
+    color: #222 !important;
+    text-decoration: none !important;
+}
+/* Contact details already appear in the header. Exclude local
+   development overlays, including Herd's injected badge. */
+footer, body > :not(.container) {
+    display: none !important;
+}
